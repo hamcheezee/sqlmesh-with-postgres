@@ -1,5 +1,5 @@
 # sqlmesh-with-postgres
-Use SQLMesh to transform [Eunomia dataset](https://github.com/OHDSI/EunomiaDatasets.git) in CSV format into OMOP CDM.
+Utilizing data from [Eunomia dataset](https://github.com/OHDSI/EunomiaDatasets.git) in CSV format.
 
 ## Python virtual environment (optional)
 It is recommended, but not required to use a python virtual environment with SQLMesh.
