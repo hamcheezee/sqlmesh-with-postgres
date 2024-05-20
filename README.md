@@ -43,14 +43,36 @@ To configure a connection to PostgreSQL, follow these steps:
     ```
     connection:
       type: postgres
-      host: {POSTGRES_HOST}
-      port: {POSTGRES_PORT}
-      user: {POSTGRES_USER}
-      password: {POSTGRES_PASSWORD}
-      database: {POSTGRES_DB}
+      host: <POSTGRES_HOST>
+      port: <POSTGRES_PORT>
+      user: <POSTGRES_USER>
+      password: <POSTGRES_PASSWORD>
+      database: <POSTGRES_DB>
     ```
 3. Test the connection
 
    ```
    sqlmesh info
    ```
+## Directories
+
+#### 1. audits
+
+#### 2. macros
+
+#### 3. models
+The ```models``` directory contains the core SQL models that define the transformations and aggregations applied to the raw data. Each model is a SQL script that processes input data and produces output tables or views.
+   - **seed**: Structure and populate seed tables with essential data
+
+   > It is recommended to create a ```dev``` environment to validate the model change without affecting production by running the following command:
+   > ```
+   > sqlmesh plan dev
+   > ```
+     
+#### 4. seeds
+The ```seeds``` directory includes CSV files or other static data sources that are used to populate tables in the database.
+
+#### 5. tests
+
+## Reference
+[SQLMesh Documentation](https://sqlmesh.readthedocs.io/en/stable/)
