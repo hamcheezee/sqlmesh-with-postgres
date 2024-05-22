@@ -1,7 +1,7 @@
 # sqlmesh-with-postgres
 Utilizing data from [Eunomia dataset](https://github.com/OHDSI/EunomiaDatasets.git) in CSV format.
 
-## Python virtual environment (optional)
+## Python Virtual Environment (optional)
 It is recommended, but not required to use a python virtual environment with SQLMesh.
 
 First, create the virtual environment:
@@ -27,7 +27,7 @@ Inside ```src```, initialize a SQLMesh project to use PostgreSQL as the default 
 sqlmesh init postgres
 ```
 
-## Configuring connection to PostgreSQL
+## Configuring Connection to PostgreSQL
 To configure a connection to PostgreSQL, follow these steps:
 
 1. Install PostgreSQL client library
@@ -54,6 +54,14 @@ To configure a connection to PostgreSQL, follow these steps:
    ```
    sqlmesh info
    ```
+
+## Data Preprocessing
+```scripts/preprocess_csv.py``` is designed to clean and standardize date and datetime columns within CSV files by running the command:
+```python
+python scripts/preprocess_csv.py      # for Python 2.x
+python3 scripts/preprocess_csv.py     # for Python 3.x
+```
+   
 ## Directories
 
 #### 1. audits
