@@ -15,3 +15,6 @@ src/config.yaml
 src/db.db*
 src/logs
 src/.cache
+
+# macOS system files
+.DS_Store
