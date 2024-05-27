@@ -1,4 +1,4 @@
-# sqlmesh-with-postgres
+# SQLMesh with PostgreSQL
 Utilizing data from [Eunomia dataset](https://github.com/OHDSI/EunomiaDatasets.git) in CSV format.
 
 ## Python Virtual Environment (optional)
