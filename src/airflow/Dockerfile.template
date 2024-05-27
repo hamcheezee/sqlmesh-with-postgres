@@ -8,3 +8,8 @@ USER root
 # Fix the airflow user UID
 ENV AIRFLOW_UID=$AIRFLOW_UID
 RUN usermod -u $AIRFLOW_UID airflow
+
+USER airflow
+
+# Install sqlmesh
+RUN pip install sqlmesh
