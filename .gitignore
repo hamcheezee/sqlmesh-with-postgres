@@ -16,5 +16,10 @@ src/db.db*
 src/logs
 src/.cache
 
+# airflow
+src/airflow/Dockerfile
+src/airflow/docker-compose.yaml
+src/airflow/airflow.sh
+
 # macOS system files
 .DS_Store
