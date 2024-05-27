@@ -20,6 +20,7 @@ src/.cache
 src/airflow/Dockerfile
 src/airflow/docker-compose.yaml
 src/airflow/airflow.sh
+src/airflow/dags/__pycache__
 
 # macOS system files
 .DS_Store
