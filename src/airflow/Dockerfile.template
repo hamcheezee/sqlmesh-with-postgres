@@ -1,0 +1,10 @@
+FROM apache/airflow:$AIRFLOW_VERSION-python3.12
+
+# Set the working directory
+WORKDIR /app
+
+USER root
+
+# Fix the airflow user UID
+ENV AIRFLOW_UID=$AIRFLOW_UID
+RUN usermod -u $AIRFLOW_UID airflow
