@@ -21,7 +21,7 @@ src/airflow/Dockerfile
 src/airflow/docker-compose.yaml
 src/airflow/airflow.sh
 src/airflow/dags/__pycache__
-arc/airflow/logs
+src/airflow/logs
 
 # macOS system files
 .DS_Store
